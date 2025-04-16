@@ -1,0 +1,361 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Blogproject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Blogproject.9vqscj10d2.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\js\\viewcount.js",
+      "PackagePath": "staticwebassets\\js\\viewcount.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\022288ad-64e6-4ce3-86c5-65d8725bf856.jpg",
+      "PackagePath": "staticwebassets\\uploads\\022288ad-64e6-4ce3-86c5-65d8725bf856.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\1e85cc30-e6a2-47b8-bacd-dabe11deb7e3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1e85cc30-e6a2-47b8-bacd-dabe11deb7e3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\2dc5d859-d97b-4c78-8f48-857e89c07d9c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\2dc5d859-d97b-4c78-8f48-857e89c07d9c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\2f14df97-d013-4679-85d7-05395c2c6021.jpg",
+      "PackagePath": "staticwebassets\\uploads\\2f14df97-d013-4679-85d7-05395c2c6021.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\4047d416-2846-45f7-86eb-0b819ee122f9.png",
+      "PackagePath": "staticwebassets\\uploads\\4047d416-2846-45f7-86eb-0b819ee122f9.png"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\422c8229-8154-4ce2-81ac-1c7df7aef8bf.jpg",
+      "PackagePath": "staticwebassets\\uploads\\422c8229-8154-4ce2-81ac-1c7df7aef8bf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\4af40a3f-96ec-42e8-bcc7-c27b3e9466b0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4af40a3f-96ec-42e8-bcc7-c27b3e9466b0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\4ef44803-b4a3-4f3f-8bf3-e2c49bb82683.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4ef44803-b4a3-4f3f-8bf3-e2c49bb82683.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\78769404-0920-4629-a55a-389e1f354056.jpg",
+      "PackagePath": "staticwebassets\\uploads\\78769404-0920-4629-a55a-389e1f354056.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\7a3577fe-2e77-4f30-9a00-9ed389ad9419.png",
+      "PackagePath": "staticwebassets\\uploads\\7a3577fe-2e77-4f30-9a00-9ed389ad9419.png"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\829afbbd-3938-44d0-bb69-1d955950036b.pdf",
+      "PackagePath": "staticwebassets\\uploads\\829afbbd-3938-44d0-bb69-1d955950036b.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\890c85eb-c6fd-4767-9099-6538bd01913a.txt",
+      "PackagePath": "staticwebassets\\uploads\\890c85eb-c6fd-4767-9099-6538bd01913a.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\9d4f9e34-094b-48c4-a8f1-3bf6fbbe3639.jpg",
+      "PackagePath": "staticwebassets\\uploads\\9d4f9e34-094b-48c4-a8f1-3bf6fbbe3639.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\aa8a1687-f2c3-481d-bb7f-16edda9fdea1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\aa8a1687-f2c3-481d-bb7f-16edda9fdea1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\ae86e994-b48c-4211-895f-54bb586ade2e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ae86e994-b48c-4211-895f-54bb586ade2e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\b14ed4d5-2649-4432-860d-680430ce5fb2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b14ed4d5-2649-4432-860d-680430ce5fb2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\b6257f6e-611f-48ef-8665-4450b5e9e2a4.png",
+      "PackagePath": "staticwebassets\\uploads\\b6257f6e-611f-48ef-8665-4450b5e9e2a4.png"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\be560acc-7701-46db-96c9-8315d9223e1c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\be560acc-7701-46db-96c9-8315d9223e1c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\cc205c40-d022-4550-93a6-11f0b3e2d446.png",
+      "PackagePath": "staticwebassets\\uploads\\cc205c40-d022-4550-93a6-11f0b3e2d446.png"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\e7aafcc7-90cb-40df-8d3f-3891e22a6935.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e7aafcc7-90cb-40df-8d3f-3891e22a6935.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\ef67dd70-f1ef-42b4-841f-a97097abf857.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ef67dd70-f1ef-42b4-841f-a97097abf857.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yigit\\Desktop\\doğuşTeknoloji-Bootcamp\\Blog\\Blog\\wwwroot\\uploads\\ffa80337-f4d3-42c9-94dc-5808c85beb96.png",
+      "PackagePath": "staticwebassets\\uploads\\ffa80337-f4d3-42c9-94dc-5808c85beb96.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Blogproject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Blogproject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Blogproject.props",
+      "PackagePath": "build\\Blogproject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Blogproject.props",
+      "PackagePath": "buildMultiTargeting\\Blogproject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Blogproject.props",
+      "PackagePath": "buildTransitive\\Blogproject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

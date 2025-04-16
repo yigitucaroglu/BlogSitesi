@@ -1,0 +1,34 @@
+• Masaüstü uygulamalar geliştirme
+
+• Coğrafi Bilgi Sistemleri geliştirme
+
+• İlişkisel Veritabanı Operasyonları
+
+• Server Tabanlı Uygulamalar
+
+• Multimedya geliştirme (FFMPEG, GStreamer vb.)
+
+• Görüntü işleme ve iyileştirme (OpenCV, MATLAB vb.)
+
+• Bilgisayar grafikleri geliştirme (OpenGL, DirectX vb.)
+
+• 3D vision ve Augmented Reality ( Kamera kalibrasyonu, matematiksel modelleme vb. )
+
+• Dağıtık sistemler ve haberleşme teknolojileri
+
+• DevOps teknolojileri
+
+• Dokunmatik sistem uygulamaları (C++)
+
+• AR-VR eğitim uygulamalarının geliştirilmesi
+
+• Yazılım test süreçleri (manuel, otomasyon)
+
+• Veri analiz araçları geliştirme
+
+• İHA Kullanıcı Arayüzleri ve Alt Bileşenleri
+
+• Kullanıcı Deneyimi ve Kullanım Durumları Analizi
+
+yer almaktadır.
+

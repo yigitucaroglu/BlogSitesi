@@ -1,0 +1,41 @@
+﻿@model List<BlogProject.Models.BlogPost>
+
+@{
+    ViewData["Title"] = "Arama Sonuçları";
+}
+
+<h2 class="mb-4 text-center">"@ViewBag.SearchQuery" için sonuçlar</h2>
+
+@if (Model.Count == 0)
+{
+    <div class="alert alert-warning text-center">Hiç sonuç bulunamadı.</div>
+}
+else
+{
+    <div class="row justify-content-center">
+        @foreach (var blog in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <a asp-action="Details" asp-controller="Blog" asp-route-id="@blog.Id" class="text-decoration-none text-dark">
+                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                        @if (!string.IsNullOrEmpty(blog.ImageUrl))
+                        {
+                            <img src="@blog.ImageUrl" class="card-img-top rounded-top-4" alt="Görsel">
+                        }
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">@blog.Title</h5>
+                            <p class="card-text text-muted">
+                                @blog.Content?.Substring(0, Math.Min(blog.Content.Length, 100))...
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    @blog.PublishedDate.ToShortDateString() | @blog.Category?.Name | @blog.User?.UserName
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+}

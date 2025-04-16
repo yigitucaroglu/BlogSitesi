@@ -1,0 +1,13 @@
+﻿@model BlogProject.Models.Comment
+
+<div class="container mt-5">
+    <h4>Yorumu Düzenle</h4>
+    <form asp-action="EditComment" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label for="Content">İçerik</label>
+            <textarea asp-for="Content" class="form-control" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success mt-3">Güncelle</button>
+    </form>
+</div>

@@ -1,0 +1,66 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+/* Blog kart hover efekti */
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+.blog-card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .blog-card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    border-bottom: 1px solid #eee;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.card-footer {
+    font-size: 0.8rem;
+}
+.bg-gradient-primary {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+}
+.transition-card {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+    .transition-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);

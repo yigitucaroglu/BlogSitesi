@@ -1,0 +1,26 @@
+﻿@* _Sidebar.cshtml *@
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-light shadow rounded" style="width: 250px; min-height: 100vh;">
+    <span class="fs-5 mb-3">📚 Menü</span>
+    <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+            <a asp-controller="Blog" asp-action="Index" class="nav-link">
+                <i class="bi bi-house-door"></i> Anasayfa
+            </a>
+        </li>
+        <li class="nav-item">
+            <a asp-controller="Blog" asp-action="MyBlogs" class="nav-link">
+                <i class="bi bi-person-lines-fill"></i> Bloglarım
+            </a>
+        </li>
+        <li class="nav-item">
+            <a asp-controller="Blog" asp-action="Create" class="nav-link">
+                <i class="bi bi-plus-circle"></i> Blog Ekle
+            </a>
+        </li>
+        <li class="nav-item">
+            <a asp-controller="Profile" asp-action="Index" class="nav-link">
+                <i class="bi bi-person-circle"></i> Profilim
+            </a>
+        </li>
+    </ul>
+</div>

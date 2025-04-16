@@ -1,0 +1,85 @@
+﻿@model BlogProject.ViewModels.BlogCreateViewModel
+
+@{
+    ViewData["Title"] = "Yeni Blog Oluştur";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+<div class="container mt-5">
+    <div class="card p-4 shadow">
+        <h3 class="mb-4"><i class="bi bi-pencil-square"></i> Yeni Blog Oluştur</h3>
+
+        <form asp-action="Create" asp-controller="Blog" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label">Başlık</label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">İçerik</label>
+                <textarea id="summernote" name="Content">@Model.Content</textarea>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="ImageFile" class="form-label">Kapak Görseli</label>
+                <input asp-for="ImageFile" type="file" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="CategoryId" class="form-label">Kategori</label>
+                <select asp-for="CategoryId" class="form-select" asp-items="Model.Categories">
+                    <option value="">-- Kategori Seçin --</option>
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-success"><i class="bi bi-save"></i> Blogu Kaydet</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#summernote').summernote({
+                height: 300,
+                placeholder: 'İçeriğinizi buraya yazın...',
+                callbacks: {
+                    onImageUpload: function (files) {
+                        for (var i = 0; i < files.length; i++) {
+                            uploadImage(files[i]);
+                        }
+                    }
+                },
+                toolbar: [
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['insert', ['picture', 'link']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['view', ['fullscreen', 'codeview']]
+                ]
+            });
+
+            function uploadImage(file) {
+                var data = new FormData();
+                data.append("file", file);
+                $.ajax({
+                    url: '/Blog/UploadImage',
+                    type: 'POST',
+                    data: data,
+                    contentType: false,
+                    processData: false,
+                    success: function (resp) {
+                        $('#summernote').summernote('insertImage', resp.location);
+                    },
+                    error: function () {
+                        alert("Görsel yüklenemedi.");
+                    }
+                });
+            }
+        });
+    </script>
+}

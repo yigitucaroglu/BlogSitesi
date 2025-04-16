@@ -1,0 +1,57 @@
+﻿@model List<BlogProject.ViewModels.CommentViewModel>
+
+@foreach (var comment in Model)
+{
+    <div class="border rounded p-3 my-2 shadow-sm">
+        <strong>@comment.UserName</strong>
+        <small class="text-muted">(@comment.CreatedAt.ToString("dd.MM.yyyy"))</small>
+        <p class="mt-2 mb-1">@comment.Content</p>
+        <!-- DÜZENLE ve SİL Butonları -->
+<div class="mb-2">
+    @if (User.Identity.IsAuthenticated && comment.UserName == User.Identity.Name)
+    {
+        <button class="btn btn-sm btn-outline-warning edit-btn" data-id="@comment.Id">Düzenle</button>
+    }
+
+    @if (User.Identity.IsAuthenticated && (comment.UserName == User.Identity.Name || ViewBag.BlogOwnerId == User.FindFirst("sub")?.Value))
+    {
+        <form asp-action="DeleteComment" asp-controller="Blog" method="post" class="d-inline">
+            <input type="hidden" name="commentId" value="@comment.Id" />
+            <button type="submit" class="btn btn-sm btn-outline-danger">Sil</button>
+        </form>
+    }
+</div>
+
+
+        <!-- Düzenleme Formu -->
+        <div id="edit-form-@comment.Id" class="mt-2 d-none">
+            <form asp-action="EditComment" asp-controller="Blog" method="post">
+                <input type="hidden" name="commentId" value="@comment.Id" />
+                <textarea name="content" class="form-control mb-2" rows="2">@comment.Content</textarea>
+                <button type="submit" class="btn btn-success btn-sm">Kaydet</button>
+            </form>
+        </div>
+        <!-- Yanıtla Butonu -->
+        <button class="btn btn-outline-primary btn-sm reply-btn" data-comment-id="@comment.Id">
+            Yanıtla
+        </button>
+
+        <!-- Cevap Formu (Gizli) -->
+        <div id="reply-form-@comment.Id" class="mt-2 d-none">
+            <form asp-action="AddComment" asp-controller="Blog" method="post">
+                <input type="hidden" name="BlogId" value="@ViewBag.BlogId" />
+                <input type="hidden" name="ParentCommentId" value="@comment.Id" />
+                <textarea name="Content" class="form-control mb-2" rows="2" placeholder="Cevabınızı yazın..." required></textarea>
+                <button type="submit" class="btn btn-success btn-sm">Gönder</button>
+            </form>
+        </div>
+
+        <!-- Alt Yorumlar (Cevaplar) -->
+        @if (comment.Replies != null && comment.Replies.Any())
+        {
+            <div class="ms-4 mt-3">
+                @Html.Partial("_CommentTreePartial", comment.Replies)
+            </div>
+        }
+    </div>
+}

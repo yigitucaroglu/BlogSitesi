@@ -1,0 +1,108 @@
+﻿@model BlogProject.Models.AppUser
+@{
+    ViewData["Title"] = "Profilim";
+    
+    var imagePath = string.IsNullOrEmpty(Model.ProfileImageUrl) ? "/images/default-user.png" : Model.ProfileImageUrl;
+}
+
+
+<div class="container mt-5">
+    <div class="card shadow-lg rounded-4 overflow-hidden">
+        <!-- Profil Header -->
+        <div class="bg-gradient p-4 text-white" style="background: linear-gradient(to right, #7b2ff7, #f107a3);">
+            <div class="d-flex align-items-center gap-4">
+                @if (!string.IsNullOrEmpty(Model.ProfileImageUrl))
+                {
+                    <img src="@imagePath" class="rounded-circle shadow" style="width: 100px; height: 100px; object-fit: cover; border: 4px solid white;" />
+                }
+                else
+                {
+                    <div class="d-flex align-items-center justify-content-center rounded-circle shadow bg-white" style="width: 100px; height: 100px; border: 4px solid white;">
+                        <i class="bi bi-person-circle text-secondary" style="font-size: 64px;"></i>
+                    </div>
+                }
+
+                <div>
+                    <h4 class="fw-bold mb-0">@Model.Name @Model.Surname</h4>
+                    <small class="fst-italic">@Model.UserName</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bilgi ve Ayarlar -->
+        <div class="p-4">
+            <ul class="nav nav-tabs mb-4" id="profileTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="info-tab" data-bs-toggle="tab" data-bs-target="#info" type="button" role="tab">Bilgilerim</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="edit-tab" data-bs-toggle="tab" data-bs-target="#edit" type="button" role="tab">Güncelle</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="profileTabContent">
+                <!-- Bilgiler -->
+                <div class="tab-pane fade show active" id="info" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Ad</label>
+                            <div class="form-control">@Model.Name</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Soyad</label>
+                            <div class="form-control">@Model.Surname</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Kullanıcı Adı</label>
+                            <div class="form-control">@Model.UserName</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">E-mail</label>
+                            <div class="form-control">@Model.Email</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Telefon</label>
+                            <div class="form-control">@Model.PhoneNumber</div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Güncelleme Formu -->
+                <div class="tab-pane fade" id="edit" role="tabpanel">
+                    <form asp-action="UpdateProfile" asp-controller="Profile" method="post" enctype="multipart/form-data" class="mt-3">
+                        <input type="hidden" name="Id" value="@Model.Id" />
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label>Ad</label>
+                                <input name="Name" class="form-control" value="@Model.Name" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label>Soyad</label>
+                                <input name="Surname" class="form-control" value="@Model.Surname" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label>Kullanıcı Adı</label>
+                                <input name="UserName" class="form-control" value="@Model.UserName" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label>Telefon</label>
+                                <input name="PhoneNumber" class="form-control" value="@Model.PhoneNumber" />
+                            </div>
+                            <div class="col-md-6">
+                                <label>E-mail</label>
+                                <input name="Email" class="form-control" value="@Model.Email" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label>Profil Fotoğrafları</label>
+                                <input type="file" name="ProfileImage" class="form-control" />
+                            </div>
+                            
+                        </div>
+                        <button type="submit" class="btn btn-success mt-4">Kaydet</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

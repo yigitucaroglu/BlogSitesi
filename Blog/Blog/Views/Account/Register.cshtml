@@ -1,0 +1,61 @@
+﻿@model BlogProject.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Kayıt Ol";
+}
+
+<div class="container mt-5">
+    <div class="card shadow rounded-4 p-4 mx-auto" style="max-width: 600px;">
+        <h3 class="text-center fw-bold mb-4">📝 Kayıt Ol</h3>
+        <form asp-action="Register" method="post" enctype="multipart/form-data">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label asp-for="Name" class="form-label">Ad</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="Surname" class="form-label">Soyad</label>
+                    <input asp-for="Surname" class="form-control" />
+                    <span asp-validation-for="Surname" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="UserName" class="form-label">Kullanıcı Adı</label>
+                    <input asp-for="UserName" class="form-control" />
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control" />
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="PhoneNumber" class="form-label">Telefon</label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="ProfileImage" class="form-label">Profil Fotoğrafı</label>
+                    <input asp-for="ProfileImage" type="file" class="form-control" />
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="Password" class="form-label">Şifre</label>
+                    <input asp-for="Password" type="password" class="form-control" />
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="ConfirmPassword" class="form-label">Şifre Tekrar</label>
+                    <input asp-for="ConfirmPassword" type="password" class="form-control" />
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-4 w-100">Kayıt Ol</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

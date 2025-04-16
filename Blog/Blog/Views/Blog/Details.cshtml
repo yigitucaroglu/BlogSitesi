@@ -1,0 +1,103 @@
+﻿@model BlogProject.ViewModels.BlogDetailsViewModel
+
+@{
+    ViewData["Title"] = "Blog Detayı";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card shadow-lg rounded-4 p-4">
+
+                <!-- Blog Görseli -->
+                @if (!string.IsNullOrEmpty(Model.Blog.ImageUrl))
+                {
+                    <img src="@Model.Blog.ImageUrl" class="img-fluid rounded-4 mb-4 w-100" alt="" />
+                }
+
+                <!-- Başlık -->
+                <h2 class="fw-bold mb-3">@Model.Blog.Title</h2>
+
+                <!-- Bilgi Satırı -->
+                <div class="mb-3 text-muted d-flex flex-wrap gap-2 align-items-center">
+                    <i class="bi bi-person-fill"></i> <span>@Model.Blog.User?.UserName</span>
+                    <i class="bi bi-calendar-event ms-3"></i> <span>@Model.Blog.PublishedDate.ToString("dd MMMM yyyy")</span>
+                    @if (Model.Blog.Category != null)
+                    {
+                        <span class="badge bg-primary ms-3">@Model.Blog.Category.Name</span>
+                    }
+                </div>
+
+                <!-- İçerik -->
+                <div class="mb-4">
+                    <div class="lead">
+                        @Html.Raw(Model.Blog.Content)
+                    </div>
+
+                </div>
+                <div class="text-muted">
+                    <i class="bi bi-eye"></i> @Model.Blog.ViewCount Görüntülenme
+                </div>
+                <!-- Beğeni / Beğenmeme -->
+                <div class="d-flex gap-3 align-items-center mb-4">
+                    <form asp-action="Like" asp-controller="Blog" asp-route-id="@Model.Blog.Id" method="post" class="d-inline">
+                        <button class="btn btn-outline-success btn-sm shadow-sm">👍 Beğen (@Model.LikeCount)</button>
+                    </form>
+
+                    <form asp-action="Dislike" asp-controller="Blog" asp-route-id="@Model.Blog.Id" method="post" class="d-inline">
+                        <button class="btn btn-outline-danger btn-sm shadow-sm">👎 Beğenme (@Model.DislikeCount)</button>
+                    </form>
+                </div>
+
+                <!-- Yorum Formu -->
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <form asp-action="AddComment" asp-controller="Blog" method="post" class="mb-4">
+                        <input type="hidden" name="BlogId" value="@Model.Blog.Id" />
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Yorum Yap</label>
+                            <textarea name="Content" class="form-control" rows="3" placeholder="Yorumunuzu buraya yazın..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">💬 Gönder</button>
+                    </form>
+                }
+                else
+                {
+                    <div class="alert alert-warning">Yorum yapmak için <a asp-controller="Account" asp-action="Login">giriş yapmalısınız</a>.</div>
+                }
+
+                <!-- Yorum Listesi -->
+                @if (Model.CommentTree != null && Model.CommentTree.Any())
+                {
+                    <div class="mt-4">
+                        <h5 class="fw-bold mb-3">💬 Yorumlar (@Model.CommentTree.Count)</h5>
+                        @Html.Partial("_CommentTreePartial", Model.CommentTree)
+                    </div>
+                }
+
+                <!-- Geri Dön -->
+                <div class="text-end mt-4">
+                    <a asp-action="Index" asp-controller="Blog" class="btn btn-outline-secondary">
+                        <i class="bi bi-arrow-left"></i> Geri Dön
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".reply-btn").forEach(button => {
+                button.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const commentId = this.getAttribute("data-comment-id");
+                    const form = document.getElementById("reply-form-" + commentId);
+                    if (form) {
+                        form.classList.toggle("d-none");
+                    }
+                });
+            });
+        });
+    </script>
+}

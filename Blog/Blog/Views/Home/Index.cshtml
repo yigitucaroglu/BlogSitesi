@@ -1,0 +1,43 @@
+﻿@model BlogProject.ViewModels.BlogListViewModel
+
+<h2 class="text-center mb-4">Bloglar</h2>
+
+<form method="get" asp-controller="Blog" asp-action="Index" class="mb-4 text-center">
+    <select name="categoryId" class="form-select w-auto d-inline-block me-2">
+        <option value="">Tüm Kategoriler</option>
+        @foreach (var category in Model.Categories)
+        {
+            if (category.Id == Model.SelectedCategoryId)
+            {
+                <option value="@category.Id" selected>@category.Name</option>
+            }
+
+        }
+    </select>
+    <button type="submit" class="btn btn-primary">Filtrele</button>
+</form>
+
+<div class="row justify-content-center">
+    @foreach (var blog in Model.Blogs)
+    {
+        <div class="col-md-4 mb-4">
+            <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0 rounded-4">
+                    @if (!string.IsNullOrEmpty(blog.ImageUrl))
+                    {
+                        <img src="@blog.ImageUrl" class="card-img-top rounded-top-4" alt="Görsel">
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">@blog.Title</h5>
+                        <p class="card-text text-muted">
+                            @blog.Content?.Substring(0, Math.Min(blog.Content.Length, 100))...
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">@blog.PublishedDate.ToShortDateString() | @blog.Category?.Name | @blog.User?.UserName</small>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
+</div>

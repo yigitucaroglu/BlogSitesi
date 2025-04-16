@@ -1,0 +1,95 @@
+﻿@model BlogProject.ViewModels.BlogListViewModel
+
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        @foreach (var blog in Model.Blogs)
+        {
+            <div class="col-md-4 mb-4">
+                <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id" class="text-decoration-none text-dark">
+                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                        @if (!string.IsNullOrEmpty(blog.ImageUrl))
+                        {
+                            <img src="@blog.ImageUrl" class="card-img-top rounded-top-4" alt="">
+                        }
+
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">@blog.Title</h5>
+
+                            <p class="card-text text-muted">
+                                @blog.Content?.StripHtml().Truncate(100)
+                            </p>
+
+                            <p class="card-text text-muted">
+                                <small>
+                                    @blog.PublishedDate.ToShortDateString() |
+                                    @blog.Category?.Name |
+                                    <i class="bi bi-eye"></i> @blog.ViewCount görüntüleme
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+@if (Model.TopBlogs != null && Model.TopBlogs.Any())
+{
+    <div class="mb-5">
+        <h3 class="text-center text-primary fw-bold mb-4"> En Çok Görüntülenen Bloglar</h3>
+
+        <div id="topBlogsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                @{
+                    int counter = 0;
+                    for (int i = 0; i < Model.TopBlogs.Count; i += 5)
+                    {
+                        var group = Model.TopBlogs.Skip(i).Take(5).ToList();
+                        <div class="carousel-item @(counter == 0 ? "active" : "")">
+                            <div class="row justify-content-center">
+                                @foreach (var blog in group)
+                                {
+                                    <div class="col-md-2 mb-3 mx-2">
+                                        <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id" class="text-decoration-none text-dark">
+                                            <div class="card h-100 shadow-sm border-0 rounded-4">
+                                                @if (!string.IsNullOrEmpty(blog.ImageUrl))
+                                                {
+                                                    <img src="@blog.ImageUrl" class="card-img-top" alt="">
+                                                }
+                                                <div class="card-body">
+                                                    <h6 class="fw-bold">@blog.Title</h6>
+                                                    <p class="text-muted small mb-1">@blog.Category?.Name</p>
+                                                    <p class="text-muted small mb-0">
+                                                        <i class="bi bi-eye"></i> @blog.ViewCount görüntüleme
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                        counter++;
+                    }
+                }
+            </div>
+
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#topBlogsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#topBlogsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+            </button>
+        </div>
+    </div>
+}
+
+
+
